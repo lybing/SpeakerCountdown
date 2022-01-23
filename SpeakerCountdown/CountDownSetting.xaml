@@ -1,0 +1,15 @@
+﻿<Window x:Class="SpeakerCountdown.CountDownSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpeakerCountdown"
+        mc:Ignorable="d"
+        Title="CountDownSetting" Height="200" Width="300">
+    <Grid>
+        <local:TimeSpanPicker x:Name="txtTimer" HorizontalAlignment="Left" Margin="64,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="倒计时" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
+        <Button Content="关闭" HorizontalAlignment="Left" Margin="237,139,0,0" VerticalAlignment="Top" Click="Close_Click"/>
+        <Button Content="保存" HorizontalAlignment="Left" Margin="177,139,0,0" VerticalAlignment="Top" Click="Save_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClockSetting.xaml.cs" />
+    <Compile Remove="TimeSpanPicker1.cs" />
+    <Compile Remove="UserControl1.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="ClockSetting.xaml" />
+    <Page Remove="CustomControls.xaml" />
+    <Page Remove="TimeSpanPicker.xaml" />
+    <Page Remove="UserControl1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.PowerPoint">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>12</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>91493440-5a91-11cf-8700-00aa0060263b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="App.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
