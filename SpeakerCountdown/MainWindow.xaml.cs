@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows;
 using System.Windows.Media;
@@ -115,7 +114,7 @@ namespace SpeakerCountdown
             cs.Topmost = true;
         }
 
-        private void Cs_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+        private void Cs_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             var cds = sender as SpeakerCountdown.CountDownSetting;
             if (cds != null && cds.IsSave)
