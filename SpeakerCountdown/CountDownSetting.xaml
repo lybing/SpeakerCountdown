@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpeakerCountdown"
         mc:Ignorable="d"
-        Title="CountDownSetting" Height="200" Width="300">
+        Title="倒计时设置" Height="200" Width="300">
     <Grid>
         <local:TimeSpanPicker x:Name="txtTimer" HorizontalAlignment="Left" Margin="64,34,0,0" VerticalAlignment="Top"/>
-        <Label Content="倒计时" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="倒计时长" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
         <Button Content="关闭" HorizontalAlignment="Left" Margin="237,139,0,0" VerticalAlignment="Top" Click="Close_Click"/>
         <Button Content="保存" HorizontalAlignment="Left" Margin="177,139,0,0" VerticalAlignment="Top" Click="Save_Click"/>
     </Grid>

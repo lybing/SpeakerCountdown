@@ -111,8 +111,8 @@ namespace SpeakerCountdown
             cs.txtTimer.Second = Second;
 
             cs.Closing += Cs_Closing;
-            cs.ShowDialog();
-            cs.Activate();
+            cs.Show();
+            cs.Topmost = true;
         }
 
         private void Cs_Closing(object? sender, System.ComponentModel.CancelEventArgs e)

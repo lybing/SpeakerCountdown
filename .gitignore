@@ -1,2 +1,4 @@
 SpeakerCountdown/bin/*
 SpeakerCountdown/obj/*
+/.idea/*
+/.vs/*

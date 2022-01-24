@@ -128,8 +128,6 @@ namespace SpeakerCountdown
             }
         }
 
-
-
         public bool IsReadOnly
         {
             get { return (bool)GetValue(IsReadOnlyProperty); }
@@ -139,20 +137,15 @@ namespace SpeakerCountdown
         // Using a DependencyProperty as the backing store for IsReadOnly.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IsReadOnlyProperty =
             DependencyProperty.Register("IsReadOnly", typeof(bool), typeof(TimeSpanPicker), new PropertyMetadata(false));
-
-
-
+        
         public TimeSpan TimeSpan
         {
             get { return (TimeSpan)GetValue(TimeSpanProperty); }
             set { SetValue(TimeSpanProperty, value); }
         }
-
-
+        
         public static readonly DependencyProperty TimeSpanProperty =
             DependencyProperty.Register("TimeSpan", typeof(TimeSpan), typeof(TimeSpanPicker), new PropertyMetadata(TimeSpan.Zero));
-
-
 
         public int Hour
         {
@@ -160,11 +153,8 @@ namespace SpeakerCountdown
             set { SetValue(HourProperty, value); }
         }
 
-
         public static readonly DependencyProperty HourProperty =
             DependencyProperty.Register("Hour", typeof(int), typeof(TimeSpanPicker), new PropertyMetadata(0));
-
-
 
         public int Minute
         {
@@ -172,19 +162,14 @@ namespace SpeakerCountdown
             set { SetValue(MinuteProperty, value); }
         }
 
-
         public static readonly DependencyProperty MinuteProperty =
             DependencyProperty.Register("Minute", typeof(int), typeof(TimeSpanPicker), new PropertyMetadata(0));
-
-
-
 
         public int Second
         {
             get { return (int)GetValue(SecondProperty); }
             set { SetValue(SecondProperty, value); }
         }
-
 
         public static readonly DependencyProperty SecondProperty =
             DependencyProperty.Register("Second", typeof(int), typeof(TimeSpanPicker), new PropertyMetadata(0));
